@@ -1,0 +1,37 @@
+/* Ensure product list is a grid with responsive columns */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; /* Space between items */
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* Style individual product items */
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the space nicely */
+}
+
+/* Additional styling for product title and price */
+.product-item h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
